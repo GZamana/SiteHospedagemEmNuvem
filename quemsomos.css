@@ -1,0 +1,310 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Pacifico&display=swap');
+
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--blue-light);
+    color: #333;
+    font-size: 17px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cores principais */
+:root {
+    --blue-light: #e0f7ff;  /* Azul bebê claro */
+    --blue-medium: #80d0ff; /* Azul médio */
+    --white: #ffffff;
+    --text-dark: #333333;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--blue-medium);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ocupar 100% da largura da página */
+    position: relative; /* Para permitir que se expanda */
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 70px;
+    height: auto;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: var(--blue-light);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #0056b3; /* Azul forte para título principal */
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #007bff; /* Azul mais claro para subtítulo */
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #007bff; /* Azul mais claro para a linha */
+}
+
+img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem ao passar o mouse */
+}
+
+footer {
+    margin-top: 20px;
+    color: #555; /* Cinza médio para o rodapé */
+    font-size: 0.9em;
+    display: flex; /* Flexbox para o rodapé */
+    flex-direction: column; /* Alinha itens na coluna */
+    align-items: center; /* Alinha itens ao centro horizontalmente */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+}
+
+.icones {
+    display: flex; /* Alinha os ícones na horizontal */
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+    padding: 50px;
+}
+
+.icones img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px; /* Altura dos ícones */
+    border-radius: 50%; /* Borda arredondada para formato circular */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
+    margin: 0 10px; /* Espaçamento horizontal entre ícones */
+    transition: transform 1.0s ease;
+}
+
+/* Estilo para a seção "Sobre Nós" */
+.content {
+    display: flex; /* Cria um layout flexível */
+    margin-bottom: 100px; /* Aumentado para 100px */
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+.image-container {
+    flex: 1; /* Faz a imagem ocupar 50% do espaço */
+    display: flex; /* Flex para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+}
+
+.texto-container {
+    flex: 1; /* Faz o texto ocupar 50% do espaço */
+    padding: 20px; /* Espaçamento interno do texto */
+    padding-bottom: 75px; /* Aumentado para 75px */
+    background-color: white; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    margin-left: 30px; /* Espaçamento à esquerda da imagem */
+    max-width: 600px; /* Largura máxima da seção "Sobre Nós" */
+    display: flex; /* Flex para centralizar verticalmente */
+    flex-direction: column; /* Direção vertical para centralização */
+    justify-content: center; /* Centraliza verticalmente */
+    transform: translateX(-120px); 
+}
+
+.imagem-sobre-nos {
+    width: 75%; /* Largura reduzida para 75% do espaço disponível */
+    max-width: 75%; /* Largura máxima da imagem reduzida */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco para centralização */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo para a imagem ao lado de "Sobre Nós" */
+#imagem-sobre-nos {
+    transition: none; /* Remove a transição para efeito de hover */
+}
+
+#imagem-sobre-nos:hover {
+    transform: none; /* Remove o efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para as seções "Missão", "Visão" e "Valores" */
+.valores-container {
+    display: flex; /* Usa flexbox para disposição lado a lado */
+    justify-content: center; /* Centraliza os quadrados */
+    margin-top: 2px; /* Espaçamento acima do contêiner */
+    flex-wrap: wrap; /* Permite que as seções quebrem em linha em telas menores */
+}
+
+section {
+    flex: 1; /* Permite que cada seção ocupe espaço igual */
+    max-width: 400px; /* Largura máxima para garantir que não ocupem muito espaço */
+    padding: 20px; /* Espaçamento interno das seções */
+    margin: 0 10px; /* Diminuiu a margem lateral para 10px */
+    background-color: white; /* Fundo branco para as seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    height: 400px; /* Duplicar a altura para 400px */
+    display: flex; /* Flex para centralizar verticalmente */
+    flex-direction: column; /* Direção vertical para centralização */
+    justify-content: center; /* Centraliza verticalmente */
+    transition: transform 0.3s ease; /* Transição suave para hover */
+}
+
+section:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .valores-container {
+        flex-direction: column; /* Empilha as seções em telas menores */
+        align-items: center; /* Centraliza as seções */
+    }
+
+    section {
+        max-width: 90%; /* Aumenta a largura em telas menores */
+        margin: 10px 0; /* Ajusta a margem em dispositivos móveis */
+        height: 300px; /* Ajusta a altura para manter o quadrado em dispositivos móveis */
+    }
+}
+
+h2 {
+    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+/* Formulários */
+fieldset {
+    border: 1px solid #0056b3;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+textarea {
+    resize: none;
+    background-color: #f9f9f9;
+    border: 1px solid #414b55;
+}
+
+.genero-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.genero-container label {
+    margin-right: 10px;
+}
+
+.genero-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff; /* Azul mais claro para hover */
+}
+
+/* Estilo do Rodapé */
+footer {
+    margin-top: 20px;
+    color: #555; /* Cinza médio para o rodapé */
+    font-size: 0.9em;
+    display: flex; /* Flexbox para o rodapé */
+    flex-direction: column; /* Alinha itens na coluna */
+    align-items: center; /* Alinha itens ao centro horizontalmente */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+}
+
+.icones {
+    display: flex; /* Alinha os ícones na horizontal */
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+    padding: 50px;
+}
+
+.icones img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px; /* Altura dos ícones */
+    border-radius: 50%; /* Borda arredondada para formato circular */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
+    margin: 0 10px; /* Espaçamento horizontal entre ícones */
+    transition: transform 1.0s ease;
+}

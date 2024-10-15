@@ -1,0 +1,242 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Pacifico&display=swap');
+
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cores principais, TORNANDO VARIÁVEIS DISPONÍVEIS GLOBALMENTE UTILIZANDO O VAR */
+:root {
+    --blue-light: #e0f7ff;  /* Azul bebê claro */
+    --blue-medium: #80d0ff; /* Azul médio */
+    --white: #ffffff;
+    --text-dark: #333333;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--blue-medium);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 70px; /* Aumentando a altura máxima da logo */
+    height: auto;
+    width: auto;
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta a logo em 10% ao passar o mouse */
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: var(--blue-light);
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+.hero {
+    background: var(--blue-light);
+    color: var(--text-dark);
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cta-button {
+    background: var(--blue-medium);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--blue-light);
+    color: var(--blue-medium);
+}
+
+/* Seção de Serviços */
+.services {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.services h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: var(--blue-light);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--blue-medium);
+}
+
+.card p {
+    color: #555;
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    background-color: var(--blue-medium);
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Contato */
+.contact {
+    padding: 60px 0;
+    background-color: var(--blue-light);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--blue-medium);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.hero {
+    background-color: var(--blue-light); /* Cor suave de fundo */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para suportar diferentes tamanhos de tela */
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 80%;  /* Mantém a imagem ajustada sem ultrapassar o layout */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Suave sombra para destacar */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Empilha a imagem e o texto em telas pequenas */
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.icones img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px; /* Altura dos ícones */
+    border-radius: 50%; /* Borda arredondada para formato circular */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
+    margin: 0 10px; /* Espaçamento horizontal entre ícones */
+    transition: transform 0.2s ease; /* Transição suave para hover */
+}
+
+
