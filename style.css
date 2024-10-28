@@ -229,14 +229,20 @@ footer p {
         margin-bottom: 20px;
     }
 }
+.icones {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
+    padding: 50px;
+}
 
 .icones img {
     width: 30px; /* Tamanho dos ícones */
     height: 30px; /* Altura dos ícones */
-    border-radius: 50%; /* Borda arredondada para formato circular */
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
-    margin: 0 10px; /* Espaçamento horizontal entre ícones */
-    transition: transform 0.2s ease; /* Transição suave para hover */
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px; 
+    transition: transform 0.2s ease; 
 }
 
 

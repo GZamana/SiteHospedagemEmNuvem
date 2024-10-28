@@ -102,105 +102,81 @@ img:hover {
     transform: scale(1.2); /* Aumenta o tamanho da imagem ao passar o mouse */
 }
 
-footer {
-    margin-top: 20px;
-    color: #555; /* Cinza médio para o rodapé */
-    font-size: 0.9em;
-    display: flex; /* Flexbox para o rodapé */
-    flex-direction: column; /* Alinha itens na coluna */
-    align-items: center; /* Alinha itens ao centro horizontalmente */
-    padding: 20px 0; /* Espaçamento interno do rodapé */
-}
 
-.icones {
-    display: flex; /* Alinha os ícones na horizontal */
-    justify-content: center; /* Centraliza os ícones */
-    margin-top: 10px; /* Espaçamento acima dos ícones */
-    padding: 50px;
-}
-
-.icones img {
-    width: 30px; /* Tamanho dos ícones */
-    height: 30px; /* Altura dos ícones */
-    border-radius: 50%; /* Borda arredondada para formato circular */
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
-    margin: 0 10px; /* Espaçamento horizontal entre ícones */
-    transition: transform 1.0s ease;
-}
 
 /* Estilo para a seção "Sobre Nós" */
 .content {
-    display: flex; /* Cria um layout flexível */
-    margin-bottom: 100px; /* Aumentado para 100px */
-    margin-top: 20px; /* Espaçamento acima */
+    display: flex; 
+    margin-bottom: 100px; 
+    margin-top: 20px; 
 }
 
 .image-container {
-    flex: 1; /* Faz a imagem ocupar 50% do espaço */
-    display: flex; /* Flex para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
 }
 
 .texto-container {
-    flex: 1; /* Faz o texto ocupar 50% do espaço */
-    padding: 20px; /* Espaçamento interno do texto */
-    padding-bottom: 75px; /* Aumentado para 75px */
-    background-color: white; /* Fundo branco */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    margin-left: 30px; /* Espaçamento à esquerda da imagem */
-    max-width: 600px; /* Largura máxima da seção "Sobre Nós" */
-    display: flex; /* Flex para centralizar verticalmente */
-    flex-direction: column; /* Direção vertical para centralização */
-    justify-content: center; /* Centraliza verticalmente */
+    flex: 1; 
+    padding: 20px; 
+    padding-bottom: 75px; 
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: 30px; 
+    max-width: 600px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     transform: translateX(-120px); 
 }
 
 .imagem-sobre-nos {
-    width: 75%; /* Largura reduzida para 75% do espaço disponível */
-    max-width: 75%; /* Largura máxima da imagem reduzida */
-    height: auto; /* Altura automática para manter a proporção */
-    border-radius: 8px; /* Bordas arredondadas para a imagem */
-    display: block; /* Garante que a imagem se comporte como um bloco para centralização */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 75%; 
+    max-width: 75%; 
+    height: auto; 
+    border-radius: 8px; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 /* Estilo para a imagem ao lado de "Sobre Nós" */
 #imagem-sobre-nos {
-    transition: none; /* Remove a transição para efeito de hover */
+    transition: none; 
 }
 
 #imagem-sobre-nos:hover {
-    transform: none; /* Remove o efeito de zoom ao passar o mouse */
+    transform: none; 
 }
 
 /* Estilo para as seções "Missão", "Visão" e "Valores" */
 .valores-container {
-    display: flex; /* Usa flexbox para disposição lado a lado */
-    justify-content: center; /* Centraliza os quadrados */
-    margin-top: 2px; /* Espaçamento acima do contêiner */
-    flex-wrap: wrap; /* Permite que as seções quebrem em linha em telas menores */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 2px; 
+    flex-wrap: wrap; 
 }
 
 section {
-    flex: 1; /* Permite que cada seção ocupe espaço igual */
-    max-width: 400px; /* Largura máxima para garantir que não ocupem muito espaço */
-    padding: 20px; /* Espaçamento interno das seções */
-    margin: 0 10px; /* Diminuiu a margem lateral para 10px */
-    background-color: white; /* Fundo branco para as seções */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    height: 400px; /* Duplicar a altura para 400px */
-    display: flex; /* Flex para centralizar verticalmente */
-    flex-direction: column; /* Direção vertical para centralização */
-    justify-content: center; /* Centraliza verticalmente */
-    transition: transform 0.3s ease; /* Transição suave para hover */
+    flex: 1; 
+    max-width: 400px; 
+    padding: 20px; 
+    margin: 0 10px; 
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    transition: transform 0.3s ease; 
 }
 
 section:hover {
-    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    transform: scale(1.02); 
 }
 
 /* Ajustes para responsividade */
@@ -218,7 +194,7 @@ section:hover {
 }
 
 h2 {
-    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+    margin-bottom: 10px; 
 }
 
 /* Formulários */
@@ -279,32 +255,32 @@ button {
 }
 
 button:hover {
-    background-color: #007bff; /* Azul mais claro para hover */
+    background-color: #007bff; 
 }
 
 /* Estilo do Rodapé */
 footer {
     margin-top: 20px;
-    color: #555; /* Cinza médio para o rodapé */
+    color: #555; 
     font-size: 0.9em;
-    display: flex; /* Flexbox para o rodapé */
-    flex-direction: column; /* Alinha itens na coluna */
-    align-items: center; /* Alinha itens ao centro horizontalmente */
-    padding: 20px 0; /* Espaçamento interno do rodapé */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 0; 
 }
 
 .icones {
-    display: flex; /* Alinha os ícones na horizontal */
-    justify-content: center; /* Centraliza os ícones */
-    margin-top: 10px; /* Espaçamento acima dos ícones */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
     padding: 50px;
 }
 
 .icones img {
-    width: 30px; /* Tamanho dos ícones */
-    height: 30px; /* Altura dos ícones */
-    border-radius: 50%; /* Borda arredondada para formato circular */
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo leve */
-    margin: 0 10px; /* Espaçamento horizontal entre ícones */
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    margin: 0 10px; 
     transition: transform 1.0s ease;
 }

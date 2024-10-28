@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Pacifico&display=swap');
 
+
 /* Reseta estilos padrão */
 * {
     margin: 0;
@@ -29,7 +30,7 @@ body {
     --text-dark: #333333;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Pacifico&display=swap');
+
 
 /* Reseta estilos padrão */
 * {
